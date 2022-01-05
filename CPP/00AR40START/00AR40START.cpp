@@ -18,7 +18,14 @@
 
 // 함수
 int main()
-{
+{// 시작
+
+    // 검은색 창에 "Hello World!|n" 내용을 띄어줘
     std::cout << "Hello World!\n";
-}
+
+    while(true)
+    {
+
+    } // 위로 올라가서 while(true) 다시 반복
+} // 종료
 
