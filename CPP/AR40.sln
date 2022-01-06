@@ -7,11 +7,20 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Doc", "Doc", "{C00FDE0D-884
 	ProjectSection(SolutionItems) = preProject
 		Git 사용법.txt = Git 사용법.txt
 		비쥬얼 스튜디오 개념.txt = 비쥬얼 스튜디오 개념.txt
+		프로그램 근본원리.txt = 프로그램 근본원리.txt
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "00AR40START", "00AR40START\00AR40START.vcxproj", "{316BCC49-07D7-4D36-B21B-E2F4E73E3A1D}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "01Complie", "01Complie\01Complie.vcxproj", "{AE189B25-ED63-435E-84AD-BD3C0DE2AB82}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "02Debug", "02Debug\02Debug.vcxproj", "{A575FA5F-FD2B-4A42-86D2-48C4D1FD6DF6}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "03MemoryAndThread", "03MemoryAndThread\03MemoryAndThread.vcxproj", "{AF34B9E4-7BF6-4538-9FBB-5D0AD9E8FD9C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "04Var00", "04Var00\04Var00.vcxproj", "{9D160296-72DD-4237-B895-C8A0B8163664}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "05 Type", "05 Type\05 Type.vcxproj", "{AFDE42AD-E930-4690-80DC-5C2F8C9B373F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,6 +46,38 @@ Global
 		{AE189B25-ED63-435E-84AD-BD3C0DE2AB82}.Release|x64.Build.0 = Release|x64
 		{AE189B25-ED63-435E-84AD-BD3C0DE2AB82}.Release|x86.ActiveCfg = Release|Win32
 		{AE189B25-ED63-435E-84AD-BD3C0DE2AB82}.Release|x86.Build.0 = Release|Win32
+		{A575FA5F-FD2B-4A42-86D2-48C4D1FD6DF6}.Debug|x64.ActiveCfg = Debug|x64
+		{A575FA5F-FD2B-4A42-86D2-48C4D1FD6DF6}.Debug|x64.Build.0 = Debug|x64
+		{A575FA5F-FD2B-4A42-86D2-48C4D1FD6DF6}.Debug|x86.ActiveCfg = Debug|Win32
+		{A575FA5F-FD2B-4A42-86D2-48C4D1FD6DF6}.Debug|x86.Build.0 = Debug|Win32
+		{A575FA5F-FD2B-4A42-86D2-48C4D1FD6DF6}.Release|x64.ActiveCfg = Release|x64
+		{A575FA5F-FD2B-4A42-86D2-48C4D1FD6DF6}.Release|x64.Build.0 = Release|x64
+		{A575FA5F-FD2B-4A42-86D2-48C4D1FD6DF6}.Release|x86.ActiveCfg = Release|Win32
+		{A575FA5F-FD2B-4A42-86D2-48C4D1FD6DF6}.Release|x86.Build.0 = Release|Win32
+		{AF34B9E4-7BF6-4538-9FBB-5D0AD9E8FD9C}.Debug|x64.ActiveCfg = Debug|x64
+		{AF34B9E4-7BF6-4538-9FBB-5D0AD9E8FD9C}.Debug|x64.Build.0 = Debug|x64
+		{AF34B9E4-7BF6-4538-9FBB-5D0AD9E8FD9C}.Debug|x86.ActiveCfg = Debug|Win32
+		{AF34B9E4-7BF6-4538-9FBB-5D0AD9E8FD9C}.Debug|x86.Build.0 = Debug|Win32
+		{AF34B9E4-7BF6-4538-9FBB-5D0AD9E8FD9C}.Release|x64.ActiveCfg = Release|x64
+		{AF34B9E4-7BF6-4538-9FBB-5D0AD9E8FD9C}.Release|x64.Build.0 = Release|x64
+		{AF34B9E4-7BF6-4538-9FBB-5D0AD9E8FD9C}.Release|x86.ActiveCfg = Release|Win32
+		{AF34B9E4-7BF6-4538-9FBB-5D0AD9E8FD9C}.Release|x86.Build.0 = Release|Win32
+		{9D160296-72DD-4237-B895-C8A0B8163664}.Debug|x64.ActiveCfg = Debug|x64
+		{9D160296-72DD-4237-B895-C8A0B8163664}.Debug|x64.Build.0 = Debug|x64
+		{9D160296-72DD-4237-B895-C8A0B8163664}.Debug|x86.ActiveCfg = Debug|Win32
+		{9D160296-72DD-4237-B895-C8A0B8163664}.Debug|x86.Build.0 = Debug|Win32
+		{9D160296-72DD-4237-B895-C8A0B8163664}.Release|x64.ActiveCfg = Release|x64
+		{9D160296-72DD-4237-B895-C8A0B8163664}.Release|x64.Build.0 = Release|x64
+		{9D160296-72DD-4237-B895-C8A0B8163664}.Release|x86.ActiveCfg = Release|Win32
+		{9D160296-72DD-4237-B895-C8A0B8163664}.Release|x86.Build.0 = Release|Win32
+		{AFDE42AD-E930-4690-80DC-5C2F8C9B373F}.Debug|x64.ActiveCfg = Debug|x64
+		{AFDE42AD-E930-4690-80DC-5C2F8C9B373F}.Debug|x64.Build.0 = Debug|x64
+		{AFDE42AD-E930-4690-80DC-5C2F8C9B373F}.Debug|x86.ActiveCfg = Debug|Win32
+		{AFDE42AD-E930-4690-80DC-5C2F8C9B373F}.Debug|x86.Build.0 = Debug|Win32
+		{AFDE42AD-E930-4690-80DC-5C2F8C9B373F}.Release|x64.ActiveCfg = Release|x64
+		{AFDE42AD-E930-4690-80DC-5C2F8C9B373F}.Release|x64.Build.0 = Release|x64
+		{AFDE42AD-E930-4690-80DC-5C2F8C9B373F}.Release|x86.ActiveCfg = Release|Win32
+		{AFDE42AD-E930-4690-80DC-5C2F8C9B373F}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
