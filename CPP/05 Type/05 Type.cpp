@@ -20,7 +20,10 @@ int main()
     int PlayerAtt = 1;
     int MonsterHp = 10;
 
-    MonsterHp = MonsterHp - PlayerAtt;
+    // 이와 같이 메모리를 받아서 사용
+    int Result = MonsterHp - PlayerAtt;
+
+    
 }
 
 
