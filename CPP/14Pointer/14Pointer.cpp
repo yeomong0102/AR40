@@ -31,7 +31,7 @@ int main()
     // 포인터화가 되었음
     // 포인터 관련 
 
-    *Ptr = 20;
+    *Ptr = 10;
 
     int IntSize = sizeof(int);
     int BoolSize = sizeof(bool);
