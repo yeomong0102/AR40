@@ -14,7 +14,7 @@ void ToUpper(const char* _Left, char* _Right)
 {
 	int LeftCount = StringCount(_Left);
 
-	int iCount = 0;
+	
 	for (int i = 0; i < LeftCount; i += 1)
 	{
 		char LeftValue = _Left[i];
@@ -140,12 +140,12 @@ int main()
 	}
 
 	{
-		// 이건 질문 안하셔도 됩니다.
-		char Text[100] = "aa, bb, aa, bb aa aa aa aaaaaaa ccdffeds";
-		TextChange(Text, "aa", "fff");
-		// "fff, bb, fff, bb fff fff fff fffffffffa ccdffeds";
-		// aa| bb| cc| dd
-		printf_s(Text);
+		//// 이건 질문 안하셔도 됩니다.
+		//char Text[100] = "aa, bb, aa, bb aa aa aa aaaaaaa ccdffeds";
+		//TextChange(Text, "aa", "fff");
+		//// "fff, bb, fff, bb fff fff fff fffffffffa ccdffeds";
+		//// aa| bb| cc| dd
+		//printf_s(Text);
 	}
 	{
 		char Text[100] = "aa, bb, cc, dd";

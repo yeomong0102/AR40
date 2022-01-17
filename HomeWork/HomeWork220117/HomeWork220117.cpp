@@ -3,7 +3,7 @@
 
 #include <iostream>
 
-int StringCount(const char* _Left)
+int PStringCount(const char* _Left)
 {
     int Count = 0;
     while (0 != _Left[Count])
@@ -13,18 +13,55 @@ int StringCount(const char* _Left)
     return Count;
 }
 
+
 int CountFirst(const char* _Text,int _Start, const char* FindStr)
 {
-    int FirstCount = StringCount(_Text);
+    int FirstCount = PStringCount(_Text);
 
-    int a = 0;
+    char Str = *FindStr;
 
-    return -1;
+    int StartNum = 0;
+    
+    
+    for (int i = _Start; i < FirstCount; i += 1)
+    {
+        char FirstValue = _Text[i];
+
+        if (FirstValue == Str)
+        {
+            StartNum = i + 1;
+            break;
+          
+        }
+    }
+    
+
+    return StartNum;
 }
 
 int CountLast(const char* _Text, int _End, const char* FindStr)
 {
-    return -1;
+    int LastCount = _End;
+
+    char Str = *FindStr;
+
+    int LastNum = 0;
+
+
+    for (int i = LastCount; i > -1; i -= 1)
+    {
+        char LastValue = _Text[i];
+
+        if (LastValue == Str)
+        {
+            LastNum = i;
+            break;
+
+        }
+    }
+
+
+    return LastNum;
 }
 
 int main()
