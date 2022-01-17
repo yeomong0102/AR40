@@ -10,7 +10,7 @@ int main()
     //int Arr[10] = { 0, };
     //int Index = 0;
 
-    //for (int i = 1; i < 10; i += 1)
+    //for (int i = 1; i < 10s i += 1)
     //{
     //    Arr[i] = i * 2;
     //}
