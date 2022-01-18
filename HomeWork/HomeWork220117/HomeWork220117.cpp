@@ -29,7 +29,7 @@ int CountFirst(const char* _Text,int _Start, const char* FindStr)
 
         if (FirstValue == Str)
         {
-            StartNum = i + 1;
+            StartNum = i;
             break;
           
         }
