@@ -8,6 +8,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Doc", "Doc", "{C00FDE0D-884
 		Error.txt = Error.txt
 		Git 사용법.txt = Git 사용법.txt
 		검색 순위.txt = 검색 순위.txt
+		리턴값에 대한 의미.txt = 리턴값에 대한 의미.txt
 		비쥬얼 스튜디오 개념.txt = 비쥬얼 스튜디오 개념.txt
 		프로그램 근본원리.txt = 프로그램 근본원리.txt
 	EndProjectSection
@@ -83,6 +84,10 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HomeWork220114", "HomeWork220114\HomeWork220114.vcxproj", "{1F702156-0FB6-49F6-9B95-09483D5B100A}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "30DPointer", "30DPointer\30DPointer.vcxproj", "{2C8D8CC1-7733-4BDD-8D10-58A4439EE319}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "31Nullptr", "31Nullptr\31Nullptr.vcxproj", "{846A5ECA-58B8-4EA1-97C4-E92635F977F3}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "32Class", "32Class\32Class.vcxproj", "{5B15DCF8-41DE-4328-A0D3-0F19AB4242F9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -372,6 +377,22 @@ Global
 		{2C8D8CC1-7733-4BDD-8D10-58A4439EE319}.Release|x64.Build.0 = Release|x64
 		{2C8D8CC1-7733-4BDD-8D10-58A4439EE319}.Release|x86.ActiveCfg = Release|Win32
 		{2C8D8CC1-7733-4BDD-8D10-58A4439EE319}.Release|x86.Build.0 = Release|Win32
+		{846A5ECA-58B8-4EA1-97C4-E92635F977F3}.Debug|x64.ActiveCfg = Debug|x64
+		{846A5ECA-58B8-4EA1-97C4-E92635F977F3}.Debug|x64.Build.0 = Debug|x64
+		{846A5ECA-58B8-4EA1-97C4-E92635F977F3}.Debug|x86.ActiveCfg = Debug|Win32
+		{846A5ECA-58B8-4EA1-97C4-E92635F977F3}.Debug|x86.Build.0 = Debug|Win32
+		{846A5ECA-58B8-4EA1-97C4-E92635F977F3}.Release|x64.ActiveCfg = Release|x64
+		{846A5ECA-58B8-4EA1-97C4-E92635F977F3}.Release|x64.Build.0 = Release|x64
+		{846A5ECA-58B8-4EA1-97C4-E92635F977F3}.Release|x86.ActiveCfg = Release|Win32
+		{846A5ECA-58B8-4EA1-97C4-E92635F977F3}.Release|x86.Build.0 = Release|Win32
+		{5B15DCF8-41DE-4328-A0D3-0F19AB4242F9}.Debug|x64.ActiveCfg = Debug|x64
+		{5B15DCF8-41DE-4328-A0D3-0F19AB4242F9}.Debug|x64.Build.0 = Debug|x64
+		{5B15DCF8-41DE-4328-A0D3-0F19AB4242F9}.Debug|x86.ActiveCfg = Debug|Win32
+		{5B15DCF8-41DE-4328-A0D3-0F19AB4242F9}.Debug|x86.Build.0 = Debug|Win32
+		{5B15DCF8-41DE-4328-A0D3-0F19AB4242F9}.Release|x64.ActiveCfg = Release|x64
+		{5B15DCF8-41DE-4328-A0D3-0F19AB4242F9}.Release|x64.Build.0 = Release|x64
+		{5B15DCF8-41DE-4328-A0D3-0F19AB4242F9}.Release|x86.ActiveCfg = Release|Win32
+		{5B15DCF8-41DE-4328-A0D3-0F19AB4242F9}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

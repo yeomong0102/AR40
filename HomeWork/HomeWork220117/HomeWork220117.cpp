@@ -3,6 +3,21 @@
 
 #include <iostream>
 
+bool StringCompare(const char* _Left, const char* _Right)
+{
+    int i = 0;
+	for (((0 != _Left) || (0 != _Right));
+	{
+        char Left = _Left[i];
+        char Right = _Right[i];
+
+		if (_Left[i] != _Right[i])
+		{
+			return false;
+		}
+	}
+}
+
 int PStringCount(const char* _Left)
 {
     int Count = 0;
