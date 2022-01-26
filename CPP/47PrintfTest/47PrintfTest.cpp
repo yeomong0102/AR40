@@ -49,6 +49,7 @@ void VarTest(...)
 
 }
 
+// const char* const _fomat 형태로 printf를 쓰는 이유는 들어갔다가 나와도 처음과 달리지면 안돼기 때문에 그렇다
 int main()
 {
     VarTest(10, 20, "aaa", 30);

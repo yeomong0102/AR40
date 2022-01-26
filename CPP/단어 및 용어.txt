@@ -1,0 +1,9 @@
+네임 맹글링
+
+대부분의 언어 컴파일러는 눈으로 보는 코드를 약자 혹은 기호로 변경한다
+
+int StringCount(const char*);
+
+x@StringCount
+
+같은 방식으로 네임 맹글링한다

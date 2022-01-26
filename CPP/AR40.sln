@@ -8,6 +8,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Doc", "Doc", "{C00FDE0D-884
 		Error.txt = Error.txt
 		Git 사용법.txt = Git 사용법.txt
 		검색 순위.txt = 검색 순위.txt
+		단어 및 용어.txt = 단어 및 용어.txt
 		단축키.txt = 단축키.txt
 		리턴값에 대한 의미.txt = 리턴값에 대한 의미.txt
 		비쥬얼 스튜디오 개념.txt = 비쥬얼 스튜디오 개념.txt
@@ -125,6 +126,10 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TextRpgExt", "TextRpgExt\TextRpgExt.vcxproj", "{52228C8B-2EB6-4469-A37F-1079E736D699}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "47PrintfTest", "47PrintfTest\47PrintfTest.vcxproj", "{A06ADCAE-5585-412B-BB13-31E1AF6375C1}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "48NameSpace", "48NameSpace\48NameSpace.vcxproj", "{36EE9E72-48DC-44EA-BE6B-C6278909E9C0}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "49ClassOperator", "49ClassOperator\49ClassOperator.vcxproj", "{2B75F4F3-77A0-41A7-A872-6FFEBC1B1F8F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -566,6 +571,22 @@ Global
 		{A06ADCAE-5585-412B-BB13-31E1AF6375C1}.Release|x64.Build.0 = Release|x64
 		{A06ADCAE-5585-412B-BB13-31E1AF6375C1}.Release|x86.ActiveCfg = Release|Win32
 		{A06ADCAE-5585-412B-BB13-31E1AF6375C1}.Release|x86.Build.0 = Release|Win32
+		{36EE9E72-48DC-44EA-BE6B-C6278909E9C0}.Debug|x64.ActiveCfg = Debug|x64
+		{36EE9E72-48DC-44EA-BE6B-C6278909E9C0}.Debug|x64.Build.0 = Debug|x64
+		{36EE9E72-48DC-44EA-BE6B-C6278909E9C0}.Debug|x86.ActiveCfg = Debug|Win32
+		{36EE9E72-48DC-44EA-BE6B-C6278909E9C0}.Debug|x86.Build.0 = Debug|Win32
+		{36EE9E72-48DC-44EA-BE6B-C6278909E9C0}.Release|x64.ActiveCfg = Release|x64
+		{36EE9E72-48DC-44EA-BE6B-C6278909E9C0}.Release|x64.Build.0 = Release|x64
+		{36EE9E72-48DC-44EA-BE6B-C6278909E9C0}.Release|x86.ActiveCfg = Release|Win32
+		{36EE9E72-48DC-44EA-BE6B-C6278909E9C0}.Release|x86.Build.0 = Release|Win32
+		{2B75F4F3-77A0-41A7-A872-6FFEBC1B1F8F}.Debug|x64.ActiveCfg = Debug|x64
+		{2B75F4F3-77A0-41A7-A872-6FFEBC1B1F8F}.Debug|x64.Build.0 = Debug|x64
+		{2B75F4F3-77A0-41A7-A872-6FFEBC1B1F8F}.Debug|x86.ActiveCfg = Debug|Win32
+		{2B75F4F3-77A0-41A7-A872-6FFEBC1B1F8F}.Debug|x86.Build.0 = Debug|Win32
+		{2B75F4F3-77A0-41A7-A872-6FFEBC1B1F8F}.Release|x64.ActiveCfg = Release|x64
+		{2B75F4F3-77A0-41A7-A872-6FFEBC1B1F8F}.Release|x64.Build.0 = Release|x64
+		{2B75F4F3-77A0-41A7-A872-6FFEBC1B1F8F}.Release|x86.ActiveCfg = Release|Win32
+		{2B75F4F3-77A0-41A7-A872-6FFEBC1B1F8F}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

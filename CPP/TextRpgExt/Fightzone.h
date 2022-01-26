@@ -10,6 +10,14 @@ class Monster;
 // 선언을 여기서 해 헤더를 늘리지 않으려고 한다
 class Fightzone
 {
+	
+// public:
+// 전방선언은 기본적으로 어떤 자료형의 참조형을 사용 할때만 적용된다
+// 참조형일 경우 컴파일러가 어차피 8(4)바이트로 판단해서 크기를 잡기 때문에
+// Monster의 세부적인 사항을 알 필요가 없는 것이다
+// 	   Monster.NewMonster;  XX
+
+
 // public:
 // void Fight(Player& _Player, Monster& _Monster);
 // {
