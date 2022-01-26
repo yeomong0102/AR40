@@ -13,7 +13,7 @@ void MyPrint_s(const char* const _Text)
     while (0 != _Text[Count])
     {
         if ('%' != _Text[0])
-        {g
+        {
             putchar(_Text[Count]);
             Count += 1;
         }
