@@ -12,6 +12,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Doc", "Doc", "{C00FDE0D-884
 		단축키.txt = 단축키.txt
 		리턴값에 대한 의미.txt = 리턴값에 대한 의미.txt
 		비쥬얼 스튜디오 개념.txt = 비쥬얼 스튜디오 개념.txt
+		포트폴리오 난이도 주의점.txt = 포트폴리오 난이도 주의점.txt
 		프로그램 근본원리.txt = 프로그램 근본원리.txt
 	EndProjectSection
 EndProject
