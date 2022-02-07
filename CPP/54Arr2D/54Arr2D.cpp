@@ -6,7 +6,7 @@
 int main()
 {
     int Arr[3] = { 1, 2, 3 };
-
+    
     int* Ptr = &Arr[0];
 
     // Ptr[0] == Arr[0]
