@@ -71,6 +71,9 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "26for", "26for\26for.vcxproj", "{11BDF89C-B6A5-4766-A6B7-4B685247927F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HomeWork", "HomeWork", "{23B86ACC-DFF0-4120-A84D-9D02F47F0DA0}"
+	ProjectSection(SolutionItems) = preProject
+		C:\Users\js\Desktop\Assemblystudy\아~완벽히 이해했어.png = C:\Users\js\Desktop\Assemblystudy\아~완벽히 이해했어.png
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Homework220112", "Homework220112\Homework220112.vcxproj", "{2FE43555-883C-4AC4-A476-EDB2F3905FDA}"
 EndProject
