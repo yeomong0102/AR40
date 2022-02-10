@@ -21,6 +21,12 @@
     <ClInclude Include="TextScreen.h">
       <Filter>Engine</Filter>
     </ClInclude>
+    <ClInclude Include="ConsoleObject.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="ConsoleGlobalInst.h">
+      <Filter>Contents</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Monster.cpp">
@@ -36,5 +42,11 @@
       <Filter>Engine</Filter>
     </ClCompile>
     <ClCompile Include="ConsoleScreen.cpp" />
+    <ClCompile Include="ConsoleObject.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="ConsoleGlobalInst.cpp">
+      <Filter>Contents</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
