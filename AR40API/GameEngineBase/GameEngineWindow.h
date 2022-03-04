@@ -12,7 +12,7 @@ public:
 		return *Inst_;
 	}
 
-	static GameEngineWindow& Destroy()
+	static void Destroy()
 	{
 		if (nullptr == Inst_)
 		{
@@ -21,7 +21,7 @@ public:
 		}
 	}
 public:
-	void CreateGameWindow();
+	void CreateGameWindow(HINSTANCE _hInst);
 	void ShowGameWindow();
 
 protected:

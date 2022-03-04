@@ -8,6 +8,6 @@ int __stdcall WinMain(_In_ HINSTANCE hInstance,
     _In_ int       nCmdShow)
 {
     // GameEngineBase의 cpp까지 모르기때문에
-    GameEngineWindow::GetInst().CreateGameWindow();
+    GameEngineWindow::GetInst().CreateGameWindow(hInstance);
     GameEngineWindow::GetInst().ShowGameWindow();
 }
