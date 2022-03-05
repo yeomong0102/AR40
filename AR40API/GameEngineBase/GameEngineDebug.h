@@ -1,9 +1,23 @@
 #pragma once
+#include <crtdbg.h>
+#include <string>
+#include <assert.h>
+#include <Windows.h>
 
 // Ό³Έν :
 class GameEngineDebug
 {
 public:
+	static void LeakCheckOn();
+
+	// static void MsgBoxAssert(const std::string& _Text);
+	
+
+	
+
+protected:
+
+private:
 	// constrcuter destructer
 	GameEngineDebug();
 	~GameEngineDebug();
@@ -14,9 +28,8 @@ public:
 	GameEngineDebug& operator=(const GameEngineDebug& _Other) = delete;
 	GameEngineDebug& operator=(GameEngineDebug&& _Other) noexcept = delete;
 
-protected:
-
-private:
-
 };
 
+#define MsgBoxAssert(Text) MessageBeep(0); \
+MessageBoxA(nullptr, Text, "Error", MB_OK); \
+assert(false); 

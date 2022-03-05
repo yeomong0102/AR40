@@ -1,5 +1,5 @@
 #include <Windows.h>
-
+#include <GameEngineBase/GameEngineDebug.h>
 #include <GameEngineBase/GameEngineWindow.h>
 
 int __stdcall WinMain(_In_ HINSTANCE hInstance,
@@ -7,7 +7,11 @@ int __stdcall WinMain(_In_ HINSTANCE hInstance,
     _In_ char* lpCmdLine,
     _In_ int       nCmdShow)
 {
+    GameEngineDebug::LeakCheckOn();
+
     // GameEngineBase의 cpp까지 모르기때문에
-    GameEngineWindow::GetInst().CreateGameWindow(hInstance);
+    GameEngineWindow::GetInst().CreateGameWindow(hInstance, "GameWindow");
     GameEngineWindow::GetInst().ShowGameWindow();
+
+    GameEngineWindow::Destroy();
 }
