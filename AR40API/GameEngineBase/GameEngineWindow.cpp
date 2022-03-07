@@ -3,6 +3,23 @@
 
 LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 {
+    switch (message)
+    {
+    case WM_CREATE:
+        return DefWindowProc(hWnd, message, wParam, lParam);
+    case WM_DESTROY:
+        GameEngineWindow::GetInst().Off();
+    case WM_PAINT:
+    {
+        PAINTSTRUCT ps;
+        HDC hdc = BeginPaint(hWnd, &ps);
+        EndPaint(hWnd, &ps);
+        return DefWindowProc(hWnd, message, wParam, lParam);
+    }
+    default:
+        break;
+    }
+
     return DefWindowProc(hWnd, message, wParam, lParam);
 }
 
@@ -11,11 +28,28 @@ GameEngineWindow* GameEngineWindow::Inst_ = new GameEngineWindow;
 GameEngineWindow::GameEngineWindow() 
     : hInst_(nullptr)
     , hWnd_(nullptr)
+    , WindowOn_(true)
 {
 }
 
 GameEngineWindow::~GameEngineWindow() 
 {
+    if (nullptr != HDC_)
+    {
+        ReleaseDC(hWnd_, HDC_);
+        HDC_ = nullptr;
+    }
+
+    if (nullptr != hWnd_)
+    {
+        DestroyWindow(hWnd_);
+        hWnd_ = nullptr;
+    }
+}
+
+void GameEngineWindow::Off()
+{
+    WindowOn_ = false;
 }
 
 void GameEngineWindow::RegClass(HINSTANCE _hInst)
@@ -56,6 +90,10 @@ void GameEngineWindow::CreateGameWindow(HINSTANCE _hInst, const std::string& _Ti
     hWnd_ = CreateWindowExA(0L, "GameEngineWindowClass", "packman", WS_OVERLAPPEDWINDOW,
         CW_USEDEFAULT, 0, CW_USEDEFAULT, 0, nullptr, nullptr, _hInst, nullptr);
 
+    HDC_ = GetDC(hWnd_);
+
+    
+
     if (!hWnd_)
     {
         return;
@@ -72,5 +110,29 @@ void GameEngineWindow::ShowGameWindow()
 
     ShowWindow(hWnd_, SW_SHOW);
     UpdateWindow(hWnd_);
+
+    
 }
 
+void GameEngineWindow::MessageLoop(void(*_LoopFunction)())
+{
+    MSG msg;
+
+    while (WindowOn_)
+    {
+        if (PeekMessage(&msg, nullptr, 0, 0, PM_REMOVE))
+        {
+            TranslateMessage(&msg);
+            DispatchMessage(&msg);
+        }
+
+        if (nullptr == _LoopFunction)
+        {
+            continue;
+        }
+
+        _LoopFunction();
+
+    }
+
+}
