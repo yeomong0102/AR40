@@ -1,12 +1,12 @@
 #pragma once
-
+#include "GameEngineBase/GameEngineNameObject.h"
 // Ό³Έν :
-class GameEngineLevel
+class GameEngineLevel : public GameEngineNameObject
 {
 public:
 	// constrcuter destructer
 	GameEngineLevel();
-	~GameEngineLevel();
+	virtual ~GameEngineLevel();
 
 	// delete Function
 	GameEngineLevel(const GameEngineLevel& _Other) = delete;
@@ -15,8 +15,12 @@ public:
 	GameEngineLevel& operator=(GameEngineLevel&& _Other) noexcept = delete;
 
 protected:
-
+	virtual void Loading() = 0;
 private:
-
+	template<typename ActorType>
+	ActorType* CreateActor(const std::string& _Name)
+	{
+		return nullptrl;
+	}
 };
 

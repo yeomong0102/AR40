@@ -11,17 +11,17 @@
     <ClCompile Include="Player.cpp">
       <Filter>Play</Filter>
     </ClCompile>
-    <ClCompile Include="..\GameEngine\EndingLevel.cpp">
-      <Filter>Level</Filter>
-    </ClCompile>
-    <ClCompile Include="..\GameEngine\PlayLevel.cpp">
-      <Filter>Level</Filter>
-    </ClCompile>
-    <ClCompile Include="..\GameEngine\TitleLevel.cpp">
-      <Filter>Level</Filter>
-    </ClCompile>
     <ClCompile Include="TitleLogo.cpp">
       <Filter>Title</Filter>
+    </ClCompile>
+    <ClCompile Include="EndingLevel.cpp">
+      <Filter>Level</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayLevel.cpp">
+      <Filter>Level</Filter>
+    </ClCompile>
+    <ClCompile Include="TitleLevel.cpp">
+      <Filter>Level</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -35,17 +35,17 @@
     <ClInclude Include="Player.h">
       <Filter>Play</Filter>
     </ClInclude>
-    <ClInclude Include="..\GameEngine\EndingLevel.h">
-      <Filter>Level</Filter>
-    </ClInclude>
-    <ClInclude Include="..\GameEngine\PlayLevel.h">
-      <Filter>Level</Filter>
-    </ClInclude>
-    <ClInclude Include="..\GameEngine\TitleLevel.h">
-      <Filter>Level</Filter>
-    </ClInclude>
     <ClInclude Include="TitleLogo.h">
       <Filter>Title</Filter>
+    </ClInclude>
+    <ClInclude Include="EndingLevel.h">
+      <Filter>Level</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayLevel.h">
+      <Filter>Level</Filter>
+    </ClInclude>
+    <ClInclude Include="TitleLevel.h">
+      <Filter>Level</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -55,11 +55,11 @@
     <Filter Include="Play">
       <UniqueIdentifier>{b09614b9-3c73-4005-9a50-70e787059941}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Level">
-      <UniqueIdentifier>{48b45ee2-b825-4714-affb-2c698eede062}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Title">
       <UniqueIdentifier>{c9a69e59-58f7-40d5-875b-6a1363f989aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Level">
+      <UniqueIdentifier>{115f25ef-4fd3-414e-81b9-991ee1db9405}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

@@ -24,9 +24,11 @@ public:
 
 protected:
 	template<typename LevelType>
-	void CreateLevel(const std::string& _Level)
+	void CreateLevel(const std::string& _Name)
 	{
 		LevelType* NewLevel = new LevelType();
+		NewLevel->SetName(_Name);
+		NewLevel->Loading();
 		AllLevel_.insert(std::make_pair(_Level, NewLevel));
 	}
 
