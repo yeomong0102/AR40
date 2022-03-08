@@ -2,6 +2,11 @@
 #include <GameEngineBase/GameEngineDebug.h>
 #include <GameEngineBase/GameEngineWindow.h>
 
+void GameInit()
+{
+
+}
+
 void GameLoop()
 {
 
@@ -20,7 +25,7 @@ int __stdcall WinMain(_In_ HINSTANCE hInstance,
     // GameEngineBase의 cpp까지 모르기때문에
     GameEngineWindow::GetInst().CreateGameWindow(hInstance, "GameWindow");
     GameEngineWindow::GetInst().ShowGameWindow();
-    GameEngineWindow::GetInst().MessageLoop(GameLoop);
+    GameEngineWindow::GetInst().MessageLoop(GameInit, GameLoop);
 
     GameEngineWindow::Destroy();
 }

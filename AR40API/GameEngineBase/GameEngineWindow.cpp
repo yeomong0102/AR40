@@ -114,9 +114,16 @@ void GameEngineWindow::ShowGameWindow()
     
 }
 
-void GameEngineWindow::MessageLoop(void(*_LoopFunction)())
+void GameEngineWindow::MessageLoop(void(*_InitFunction)(), void(*_LoopFunction)())
 {
     MSG msg;
+
+    if (nullptr != _InitFunction)
+    {
+    
+        _InitFunction();
+
+    }
 
     while (WindowOn_)
     {

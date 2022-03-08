@@ -25,7 +25,7 @@ public:
 	void RegClass(HINSTANCE _hInst);
 	void CreateGameWindow(HINSTANCE _hInst, const std::string& _Title);
 	void ShowGameWindow();
-	void MessageLoop(void(*LoopFunction)());
+	void MessageLoop(void(*_InitFunction)(), void(*LoopFunction)());
 	void Off();
 
 	static inline HDC GETDC()
