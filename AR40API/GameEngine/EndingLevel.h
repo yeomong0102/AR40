@@ -1,5 +1,6 @@
 #pragma once
 #include <GameEngine/GameEngineLevel.h>
+
 // Ό³Έν :
 class EndingLevel : public GameEngineLevel
 {
@@ -15,6 +16,7 @@ public:
 	EndingLevel& operator=(EndingLevel&& _Other) noexcept = delete;
 
 protected:
+	
 
 private:
 
