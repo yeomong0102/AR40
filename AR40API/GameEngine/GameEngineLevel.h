@@ -1,11 +1,14 @@
 #pragma once
 #include "GameEngineBase/GameEngineNameObject.h"
 // 설명 :
+class GameEngine;
 class GameEngineLevel : public GameEngineNameObject
 {
+	friend GameEngine;
 public:
 	// constrcuter destructer
 	GameEngineLevel();
+
 	virtual ~GameEngineLevel();
 
 	// delete Function
@@ -16,11 +19,15 @@ public:
 
 protected:
 	virtual void Loading() = 0;
+
+	// 레벨수준의 업데이트
+	virtual void Update() = 0;
+
 private:
 	template<typename ActorType>
 	ActorType* CreateActor(const std::string& _Name)
 	{
-		return nullptrl;
+		return nullptr;
 	}
 };
 
